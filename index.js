@@ -1,5 +1,5 @@
 //3. At the top of the game.js file, create a new array called buttonColours and set it to hold the sequence "red", "blue", "green", "yellow" .
-var buttonColours = ["red", "blue", "green", "yellow"];
+var buttonColours = ["red", "blue", "green", "yellow", "pink", "teal"];
 
 //5. At the top of the game.js file, create a new empty array called gamePattern.
 var gamePattern = [];
@@ -95,7 +95,7 @@ function nextSequence() {
   $("#level-title").text("Level " + level);
 
   //2. Inside the new function generate a new random number between 0 and 3, and store it in a variable called randomNumber
-  var randomNumber = Math.floor(Math.random() * 4);
+  var randomNumber = Math.floor(Math.random() * 6);
 
   //4. Create a new variable called randomChosenColour and use the randomNumber from step 2 to select a random colour from the buttonColours array.
   var randomChosenColour = buttonColours[randomNumber];
